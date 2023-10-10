@@ -13,18 +13,24 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(num:i32) -> i32{
+    if(num > 40){
+        num
+    }else {
+        num * 2
+    }
+}
 
 // Don't modify this function!
 #[test]
 fn verify_test() {
-    let price1 = calculate_price_of_apples(35);
-    let price2 = calculate_price_of_apples(40);
-    let price3 = calculate_price_of_apples(41);
-    let price4 = calculate_price_of_apples(65);
+    let price1: i32 = calculate_price_of_apples(35);
+    let price2: i32 = calculate_price_of_apples(40);
+    let price3: i32 = calculate_price_of_apples(41);
+    let price4: i32 = calculate_price_of_apples(65);
 
     assert_eq!(70, price1);
     assert_eq!(80, price2);
